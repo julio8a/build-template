@@ -1,0 +1,42 @@
+@mixin break($args...) {
+    @if length($args) == 1 {
+      @media (max-width: nth($args, 1)) {
+        @content;
+      }
+    } @else {
+      @media (min-width: nth($args, 1))
+        and (max-width: nth($args, 2)) {
+        @content;
+      }
+    }
+  }
+
+  @mixin imageGrid($qty, $margin) {
+    width: ((100% - (($qty - 1) * $margin))/$qty);
+    &:nth-child(n) {
+      margin-right: $margin;
+      margin-bottom: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $color;
+      -moz-box-shadow:inset $top $left $blur $color;
+      box-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $color;
+      -moz-box-shadow: $top $left $blur $color;
+      box-shadow: $top $left $blur $color;
+    }
+  }
+
+  @mixin rounded($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }

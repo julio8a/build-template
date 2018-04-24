@@ -1,0 +1,67 @@
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,100);
+$robo: 'Roboto', Arial, sans-serif;
+
+// Colors
+$color-main: #007ac2;
+$black: #000;
+$darkest-gray: #222;
+$dark-gray: #333;
+$gray: #aaa;
+$light-gray: #eee;
+$white: #fff;
+
+// Project Colors
+$tapestry: #323232;
+$urbOb1: #e00000;
+$urbOb2: #1a1a1a;
+$publicHealth: #00709c;
+$inca: #359600;
+$saveMe: #DD8330;
+$industries: #00598c;
+$workforce: #db3300;
+$dashboard: #f3b20a;
+$webApps: #4d5a6a;
+$myEsri: #404040;
+$cityEngine: #2d5c80;
+
+// Social Colors
+$twitter: #00aced;
+$facebook: #3b5998;
+$dribble: #ea4c89;
+$linkedin: #3893c4;
+$cv: #444;
+$blog: #000;
+
+
+// Borders
+$border-white: 1px solid $white;
+$border-light: 1px solid $light-gray;
+$border-medium: 1px solid $gray;
+$border-heavy: 1px solid $darkest-gray;
+$border-black: 1px solid $black;
+$border-blue: 1px solid $color-main;
+
+$project-themes: (
+    1: $tapestry,
+    2: $urbOb1,
+    3: $urbOb2,
+    4: $publicHealth,
+    5: $inca,
+    6: $saveMe,
+    7: $industries,
+    8: $workforce,
+    9: $dashboard,
+    10: $webApps,
+    11: $myEsri,
+    12: $cityEngine
+);
+
+$social-colors: (
+    twitter: $twitter,
+    facebook: $facebook,
+    dribble: $dribble,
+    linkedin: $linkedin,
+    cv: $cv,
+    blog: $blog
+)

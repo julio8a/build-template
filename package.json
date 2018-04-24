@@ -1,0 +1,30 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julio8a/myPortfolio.git"
+  },
+  "author": "Julio Ochoa <julio8a00@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julio8a/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/julio8a/myPortfolio#readme",
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.2"
+  }
+}

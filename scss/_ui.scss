@@ -1,0 +1,22 @@
+@each $key, $value in $project-themes {
+	.block#{$key}, {
+        @extend %block;
+        .fond {
+            background: $value;
+        }
+	}
+	.icon#{$key} {
+        @extend %icon;
+        .fond {
+            background: $value;
+        }
+	}
+}
+
+@each $key, $value in $social-colors {
+    .fond {
+        &.#{$key} {
+            background: $value;
+        }
+    }
+}
